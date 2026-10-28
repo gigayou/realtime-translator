@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Realtime Translator",
+  "version": "0.1.0",
+  "description": "Live tab-audio transcription and translation using a configurable third-party API.",
+  "action": {
+    "default_title": "Start realtime translation"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting", "storage", "tabCapture", "offscreen"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/content/content.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

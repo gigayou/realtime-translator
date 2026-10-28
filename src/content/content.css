@@ -1,0 +1,32 @@
+#rt-translator-panel {
+  all: initial;
+  position: fixed;
+  z-index: 2147483647;
+  right: 24px;
+  bottom: 24px;
+  width: 360px;
+  max-height: 70vh;
+  overflow: auto;
+  padding: 14px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #e2e8f0;
+  box-shadow: 0 12px 40px rgb(0 0 0 / 35%);
+  font: 14px/1.45 system-ui, sans-serif;
+}
+#rt-translator-panel *, #rt-translator-panel *::before, #rt-translator-panel *::after { box-sizing: border-box; }
+#rt-translator-panel header, #rt-translator-panel footer { display: flex; align-items: center; gap: 8px; }
+#rt-translator-panel header { justify-content: space-between; margin-bottom: 10px; font-size: 15px; }
+#rt-translator-panel button { cursor: pointer; border: 1px solid #475569; border-radius: 6px; padding: 5px 9px; background: #1e293b; color: inherit; }
+#rt-translator-panel button:hover { background: #334155; }
+#rt-translator-panel header button { border: 0; padding: 0 4px; font-size: 20px; }
+#rt-translator-panel .rt-status { margin-bottom: 10px; color: #93c5fd; }
+#rt-translator-panel .rt-lines { display: grid; gap: 8px; margin-bottom: 12px; }
+#rt-translator-panel article { padding: 8px; border-radius: 7px; background: #1e293b; }
+#rt-translator-panel .rt-original { color: #f8fafc; }
+#rt-translator-panel .rt-translation { margin-top: 3px; color: #93c5fd; }
+#rt-translator-panel footer { justify-content: flex-end; }
+#rt-translator-panel form { display: grid; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #334155; }
+#rt-translator-panel label { display: grid; gap: 3px; color: #cbd5e1; font-size: 12px; }
+#rt-translator-panel input { width: 100%; border: 1px solid #475569; border-radius: 5px; padding: 6px; background: #020617; color: #f8fafc; font: inherit; }
